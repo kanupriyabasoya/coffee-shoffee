@@ -210,15 +210,14 @@ h1,.main-p{
 @media(max-width:690px){
     .page-two-sections{
         width:100%;
-        height:50vh;
+        height:100vh;
+        flex-direction: column-reverse;
     }
     .page-two-sections > *{
         width:100%;
         height:50vh;
     }
-    .page-two-sections{
-        flex-direction: column-reverse;
-    }
+
 }
 @media(max-width:350px){
     .page-two-right-section h2{
