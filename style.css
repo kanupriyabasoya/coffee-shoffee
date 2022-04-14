@@ -208,6 +208,9 @@ h1,.main-p{
     }
 }
 @media(max-width:690px){
+    .page-two{
+        height:auto;
+    }
     .page-two-sections{
         flex-direction: column-reverse;
     }
