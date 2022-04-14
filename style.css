@@ -24,9 +24,14 @@ a{
     background-position: center;
     background-color:  rgb(2, 152, 168);
 }
+@media (max-width:1030px){
+ .container{
+    background-position: bottom right;
+}
+}
 .text-shadow-class{
     color:#fff;
-    text-shadow: rgb(2, 152, 168) 2px 0px 0px, rgb(2, 152, 168) 1.75517px 0.958851px 0px, rgb(2, 152, 168) 1.0806px 1.68294px 0px, rgb(2, 152, 168) 0.141474px 1.99499px 0px, rgb(2, 152, 168) -0.832294px 1.81859px 0px, rgb(2, 152, 168) -1.60229px 1.19694px 0px, rgb(2, 152, 168) -1.97998px 0.28224px 0px, rgb(2, 152, 168) -1.87291px -0.701566px 0px, rgb(2, 152, 168) -1.30729px -1.5136px 0px, rgb(2, 152, 168) -0.421592px -1.95506px 0px, rgb(2, 152, 168) 0.567324px -1.91785px 0px, rgb(2, 152, 168) 1.41734px -1.41108px 0px, rgb(2, 152, 168) 1.92034px -0.558831px 0px;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
 }
 .header{
     width: 100%;
@@ -36,6 +41,12 @@ a{
     width:100%;
     display: flex;
     justify-content: space-between;
+}
+@media(max-width:600px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .logo-link{
     display: block;
@@ -53,6 +64,16 @@ a{
     font-size:2.5rem;
     color:#fff;
 }
+@media(max-width:600px){
+    .nav-ul li a{
+        font-size:2rem;
+    }
+}
+@media(max-width:350px){
+    .nav-ul li a{
+        font-size:1.7rem;
+    }
+}
 .nav-ul li a:hover{
     text-shadow:rgb(239, 75, 119) 2px 0px 0px, rgb(239, 75, 119) 1.75517px 0.958851px 0px, rgb(239, 75, 119) 1.0806px 1.68294px 0px, rgb(239, 75, 119) 0.141474px 1.99499px 0px, rgb(239, 75, 119) -0.832294px 1.81859px 0px, rgb(239, 75, 119) -1.60229px 1.19694px 0px, rgb(239, 75, 119) -1.97998px 0.28224px 0px, rgb(239, 75, 119) -1.87291px -0.701566px 0px, rgb(239, 75, 119) -1.30729px -1.5136px 0px, rgb(239, 75, 119) -0.421592px -1.95506px 0px, rgb(239, 75, 119) 0.567324px -1.91785px 0px, rgb(239, 75, 119) 1.41734px -1.41108px 0px, rgb(239, 75, 119) 1.92034px -0.558831px 0px;
 }
@@ -60,13 +81,37 @@ a{
 h1{
     font-size:4rem;
     margin:10rem 0 0 4rem;
-   letter-spacing: .1rem;
+    letter-spacing: .1rem;
+   
 }
-p{
+.main-p{
     font-size:2.5rem;
     margin-left: 4rem;
     margin-bottom:1rem;
     letter-spacing: .1rem;
+   
+}
+h1,.main-p{
+    color:#fff;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+@media(max-width:600px){
+    h1{
+        margin:4rem 0 0 4rem;
+        font-size: 3.5rem;
+    }
+    .main-p{
+        font-size: 2rem;
+    }
+}
+@media(max-width:350px){
+    h1{
+        font-size:3rem;
+    }
+    .main-p{
+        font-size:1.8rem ;
+    }
 }
 .menu-button{
     margin-left:4rem;
@@ -76,6 +121,17 @@ p{
     border-radius: 2rem;
     background-color: rgb(239, 75, 119);
     letter-spacing: .1rem;
+    border:2px solid #000;
+}
+@media(max-width:600px){
+    .menu-button{
+        font-size:2rem;
+    }
+}
+@media(max-width:350px){
+    .menu-button{
+        font-size:1.8rem;
+    }
 }
 .menu-button:hover{
    border:2px solid #fff;
