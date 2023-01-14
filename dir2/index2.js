@@ -1,18 +1,27 @@
 //local storage
 
 // function getFetch(){
+    document.querySelector('button').addEventListener('click', getvalue);
 
-// fetch('http://openlibrary.org/subjects/love.json?published_in=1500-1600')
-// .then(response => response.json())
-// .then(data => {
-//    data.works.forEach(element => {
-//       const li = document.createElement('li');
-//       li.textContent = element.title;
-//       document.querySelector('ul').appendChild(li);
-//    });
+    function getvalue(){
+        fetch('https://api.nasa.gov/planetary/apod?api_key=7RsqsXc7yNHN8BZSbSF7tMKSMApGITOTLMNF0VvK')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        
+            const h2 = document.querySelector('h2');
+            const para = document.querySelector('p');
+            const img = document.querySelector('img');
+
+            h2.textContent = data.date;
+            para.textContent = data.explanation;
+            img.src = data.hdurl;
+        });
+
+}
    
-//    console.log(data.works)
-// });
-// }
+   
+ 
+ 
 
-// document.querySelector('button').addEventListener('click', getFetch);
+
