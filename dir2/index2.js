@@ -36,6 +36,10 @@
 
 //    const tesla = new MakeCar("tesla","black","alpha");
 //    console.log(tesla);
+
+//3. oops 
+// 4 pillars : abstraction, polymorphism, encapsulation, inheritance
+
  
  
 
