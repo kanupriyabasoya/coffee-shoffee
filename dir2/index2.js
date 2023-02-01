@@ -39,7 +39,7 @@
 
 //3. oops 
 // 4 pillars : abstraction, polymorphism, encapsulation, inheritance
-
+//encapsulation
  
  
 
