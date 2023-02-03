@@ -40,6 +40,23 @@
 //3. oops 
 // 4 pillars : abstraction, polymorphism, encapsulation, inheritance
 //encapsulation
+
+//factory function
+function circle(radius){
+   return {
+      radius:radius,
+      draw : function(){
+         console.log("draw");
+      }
+   }
+};
+
+const factoryCircle = circle(5);
+console.log(factoryCircle);
+console.log(circle.constructor);
+console.log(factoryCircle.constructor);
+//constructor function
+
  
  
 
